@@ -1,0 +1,42 @@
+1)
+¿Qué comando debes usar para verificar la versión de Git?
+git --version
+Si no tienes Git instalado, ¿qué opciones tienes para instalarlo?
+Entrando a la URL, e instalando la versión correspondiente según el sistema operativo con el que trabajes.
+2)
+¿Qué comando usas para crear un nuevo directorio?
+mkdir
+¿Cómo puedes cambiar a un directorio específico desde la terminal?
+con cd e indicando la ruta del directorio, ejemplo documentos/test
+3)
+¿Qué comando usas para inicializar Git en un directorio?
+Git init
+¿Cómo puedes confirmar que Git ha sido inicializado correctamente?
+git status
+4)
+¿Qué comando usas para comprobar el estado del repositorio?
+git status
+¿Qué significa cuando Git dice que no hay archivos rastreados?
+Que no hay cambios realizados en el directorio en el cual estas trabajando
+5)
+¿Qué comando usas para crear un archivo nuevo desde la terminal?
+touch
+¿Qué diferencia observas en el estado del repositorio después de crear el archivo?
+Se marcan las nuevas cosas creadas y se ven en rojo, y te indica que hagas un committed
+6)
+¿Qué comando usas para añadir un archivo al área de preparación?
+git add nombreDelArchivo
+¿Qué significa añadir un archivo al área de preparación?
+Significa que estas indicando a Git que quieres incluir los cambios de ese archivo en el próximo commit
+7)
+¿Qué comando usas para realizar un commit?
+git commit -m "mensaje"
+¿Por qué es importante incluir un mensaje claro en cada commit?
+Para dejar constancia de lo que estas subiendo, con un mensaje que indique muy brevemente los cambios realizados
+8)
+¿Qué comando usas para ver el historial de commits?
+git log
+¿Qué información muestra el historial de commits?
+
+
+
