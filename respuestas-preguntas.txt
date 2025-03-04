@@ -37,6 +37,27 @@ Para dejar constancia de lo que estas subiendo, con un mensaje que indique muy b
 ¿Qué comando usas para ver el historial de commits?
 git log
 ¿Qué información muestra el historial de commits?
-
+El autor del commit, la fecha y el mensaje que ha dejado
+9)
+¿Qué comando usas para crear una nueva rama en Git?
+git Branch nombre-de-la-rama
+¿Qué diferencia hay entre crear una rama y moverte a ella?
+Son cosas distintas, con una la creas una rama y con otro comando puedes moverte de una rama a otra
+10)
+¿Qué comando usas para listar todas las ramas en Git?
+git Branch
+para listar todas las ramas, incluidas las remotas git Branch -a
+¿Cómo puedes identificar en qué rama estás trabajando actualmente?
+al ejecutar git Branch, la rama en la que estas trabajando, se marca con un *. También lo puedes ver con git status
+11)
+¿Qué comando usas para cambiar de rama?
+git checkout
+¿Cómo puedes confirmar en qué rama estás trabajando?
+con git Branch, las lista todas y te marca con un * la que estas gestionando
+12)
+¿Qué comando permite crear y cambiar a una nueva rama en un solo paso?
+git checkout -b nueva-rama
+¿Cuál es la ventaja de usar este comando?
+Crea la rama y te sitúa en ella automáticamente, abandonando en la que estes antes de ejecutar el código
 
 
