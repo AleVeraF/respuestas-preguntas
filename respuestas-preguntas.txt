@@ -59,5 +59,98 @@ con git Branch, las lista todas y te marca con un * la que estas gestionando
 git checkout -b nueva-rama
 ¿Cuál es la ventaja de usar este comando?
 Crea la rama y te sitúa en ella automáticamente, abandonando en la que estes antes de ejecutar el código
+13)
+¿Qué comando abreviado puedes usar para añadir todos los cambios al área de preparación?
+git add .
+¿Qué ventajas tiene usar este comando en lugar de añadir archivos individualmente?
+más eficiente, evitas tener que hacerlo archivo por archivo
+14)
+¿Qué comando usas para realizar un commit?
+git commit -m "mensaje"
+¿Por qué es importante escribir mensajes descriptivos en los commits?
+Para dar una idea a tu equipo de lo que has estado haciendo
+15)
+¿Qué comando usas para fusionar ramas en Git?
+git merge
+¿Qué sucede si hay conflictos durante la fusión?
+Si hay conflictos durante la fusión, Git te lo va a notificar e identificara los archivos que tienen el conflicto
+16)
+¿Qué ocurre cuando Git detecta un conflicto durante la fusión?
+¿Cómo puedes resolver un conflicto en Git?
+17)
+¿Qué es un archivo .gitignore y para qué sirve?
+Es un archivo de configuración utilizado por Git para especificar que archivos o directorios deben ser ignorados por el sistema de control de versiones
+¿Cómo puedes especificar qué tipos de archivos deben ser ignorados?
+generando un archivo .gitignore e indicando dentro todos los archivos que deseas que ignore (.log etc.)
+18)
+¿Cómo puedes hacer que Git ignore los cambios en un archivo específico sin eliminarlo del repositorio?
+Para hacer que GIT ignore cambios en un archivo en concreto, puedes utilizar el comando git update-index
+¿En qué situaciones sería útil esta técnica?
+Para archivos de configuración local o temporales
+19)
+¿Qué comando usas para clonar un repositorio remoto?
+git clone
+¿Qué diferencia hay entre clonar un repositorio y crear uno nuevo?
+Que cuando lo clonas ya es existente y puede tener información, de lo contrario tendrías que crearlo
+20)
+¿Qué es SSH y por qué es importante para trabajar con GitHub?
+Es un protocolo de red que permite la comunicación segura entre dos ordenadores
+¿Cómo puedes generar una clave SSH en tu computadora?
+ssh-keygen -t ed25519 -C "tu-email@example.com"
+21)
+¿Qué comando usas para asociar un repositorio local con uno remoto?
+git remote add.
+¿Qué comando usas para subir cambios locales a un repositorio remoto?
+git remote add origin URL-del-repositorio-remoto
+22)
+¿Qué comando usas para descargar cambios del repositorio remoto?
+git pull origin nombre-de-la-rama
+¿Qué pasa si hay conflictos al sincronizar los cambios?
+Si hay conflictos al sincronizar los cambios, git te notificara y marcara los archivos en conflicto
+23)
+¿Cómo puedes subir una rama local a un repositorio remoto?
+git push --set-upstream origin nombre-de-la-rama
+¿Cómo puedes verificar que la rama ha sido creada correctamente en GitHub?
+Lo ves en el desplegable de arriba a la izquierda, ahí debería aparecer la nueva rama que subiste
+24)
+¿Qué comando usas para eliminar una rama local?
+git branch -D nombre-de-la-rama
+¿Es posible recuperar una rama eliminada?
+Si se puede, solo si no has realizado alguna operación que sobrescriba el historial de Git. El comando es git reflog
+25)
+¿Cómo puedes eliminar una rama remota?
+git push origin --delete nombreDeLaRama
+¿Qué precauciones debes tomar antes de eliminar una rama remota?
+revisar el historial, verificar que no esté en uso
+26)
+¿Qué es una pull request y para qué sirve?
+Es una solicitud para que los cambios realizados en una rama de un reposutorio sean revisados y potencialmente fusionados en otra ama del mismo repositorio.
+¿Qué información debes incluir en una pull request?
+Titulo descriptivo
+Descripción detallada
+27)
+¿Cómo puedes revisar una pull request en GitHub?
+En el apartado de Pull Request y ahí seleccionas cual quieres ver
+¿Qué tipo de comentarios son útiles en una revisión?
+Comentarios sobre estilos de código, la funcionabilidad, legibilidad o eficiencia.
+28)
+¿Cuándo puedes fusionar una pull request automáticamente?
+Cuando ya está aprobada
+¿Qué sucede después de fusionar una pull request?
+Se actualiza la rama destino, se cierra y se envía información de la actualización a los colaboradores
+29)
+¿Qué comando usas para descartar cambios locales?
+git checkout -- nombre-del-archivo
+git checkout -- . descarta todo los archivos rastrados
+¿Cuándo es útil descartar cambios locales?
 
-
+Errores en el desarrolllo
+Cambios no deseados
+sincronización con el repo remoto
+nueva tarea
+30)
+¿Qué comando usas para restaurar un commit anterior?
+git reset
+¿Qué precauciones debes tomar al restaurar un commit anterior?
+perdida de datos
+impacto en el historial
